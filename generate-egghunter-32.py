@@ -11,7 +11,7 @@ def is_valid_tag_count(s):
 def tag_to_hex(s):
     string = s
     if is_valid_tag_count(s) == False:
-        args.tag = "c0d3"
+        args.tag = "tagx"
         string = args.tag
     retval = list()
     for char in string:
