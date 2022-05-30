@@ -325,6 +325,7 @@ if __name__ == "__main__":
         "-l",
         "--lhost",
         help="Attacker host",
+        default="127.0.0.1"
     )
     parser.add_argument(
         "-p",
