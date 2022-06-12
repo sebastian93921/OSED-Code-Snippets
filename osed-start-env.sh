@@ -19,10 +19,17 @@ wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/windbg-dark-g
 wget https://github.com/corelan/windbglib/raw/master/pykd/pykd.zip -O pykd.zip
 
 
-printf "bitsadmin /Transfer myJob http://$myip:8080/windbg.wew"' C:\\windows\\temp\\windbg.wew \n' > start-win-debugenv.bat
-printf "bitsadmin /Transfer myJob http://$myip:8080/find-ppr-32.py"' C:\\windows\\temp\\find-ppr-32.py \n' >> start-win-debugenv.bat
-printf "bitsadmin /Transfer myJob http://$myip:8080/rp-win-x86.exe"' .\rp-win-x86.exe \n' >> start-win-debugenv.bat
+printf "bitsadmin /Transfer myJob1 http://$myip:8080/windbg.wew"' C:\\windows\\temp\\windbg.wew' > start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
+printf "bitsadmin /Transfer myJob2 http://$myip:8080/find-ppr-32.py"' C:\\windows\\temp\\find-ppr-32.py' >> start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
+printf "bitsadmin /Transfer myJob3 http://$myip:8080/rp-win-x86.exe"' C:\\windows\\temp\\rp-win-x86.exe' >> start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
 printf 'echo "C:\Program Files\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbg.bat' >> start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
+printf 'echo @cmd /k "echo Navigate to temp folder.. && cd C:\\windows\\temp" > Cmd-Nav-Temp.bat' >> start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
 # Please execute `start-win-debugenv.bat` manually 
 
+echo "Start httpd from Busybox..."
 busybox httpd -f -vv -p 8080
