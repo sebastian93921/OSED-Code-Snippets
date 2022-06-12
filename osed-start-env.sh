@@ -11,7 +11,7 @@ then
     exit 1
 fi
 
-wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/rp-win-x86.exe -O rp-win-x86.exe
+wget https://github.com/0vercl0k/rp/releases/download/v1/rp-win-x86.exe -O rp-win-x86.exe
 wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/generate-shellcode-32.py -O generate-shellcode-32.py
 wget https://github.com/sebastian93921/OSED-Code-Snippets/blob/main/generate-egghunter-32.py -O generate-egghunter-32.py
 wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/find-ppr-32.py -O find-ppr-32.py
