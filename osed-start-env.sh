@@ -23,6 +23,6 @@ printf "bitsadmin /Transfer myJob http://$myip:8080/windbg.wew"' C:\\windows\\te
 printf "bitsadmin /Transfer myJob http://$myip:8080/find-ppr-32.py"' C:\\windows\\temp\\find-ppr-32.py \n' >> start-win-debugenv.bat
 printf "bitsadmin /Transfer myJob http://$myip:8080/rp-win-x86.exe"' .\rp-win-x86.exe \n' >> start-win-debugenv.bat
 printf 'echo "C:\Program Files\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbg.bat' >> start-win-debugenv.bat
-
+# Please execute `start-win-debugenv.bat` manually 
 
 busybox httpd -f -vv -p 8080
