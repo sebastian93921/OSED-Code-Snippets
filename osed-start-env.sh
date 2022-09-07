@@ -17,6 +17,7 @@ wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/generate-eggh
 wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/find-ppr-32.py -O find-ppr-32.py
 wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/windbg-dark-green-x64.wew -O windbg.wew 
 wget https://github.com/corelan/windbglib/raw/master/pykd/pykd.zip -O pykd.zip
+wget https://download.sysinternals.com/files/SysinternalsSuite.zip -O SysinternalsSuite.zip
 
 
 printf "bitsadmin /Transfer myJob1 http://$myip:8080/windbg.wew"' C:\\windows\\temp\\windbg.wew' > start-win-debugenv.bat
