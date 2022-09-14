@@ -28,6 +28,8 @@ printf "bitsadmin /Transfer myJob3 http://$myip:8080/rp-win-x86.exe"' C:\\window
 printf '\n' >> start-win-debugenv.bat # Newline
 printf 'echo "C:\Program Files\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbg.bat' >> start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
+printf 'echo "C:\Program Files (x86)\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbgx86.bat' >> start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
 printf 'echo @cmd /k "echo Navigate to temp folder.. && cd C:\\windows\\temp" > Cmd-Nav-Temp.bat' >> start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
 # Please execute `start-win-debugenv.bat` manually 
