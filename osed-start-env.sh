@@ -28,8 +28,6 @@ printf "bitsadmin /Transfer myJob2 http://$myip:8080/find-ppr-32.py"' C:\\window
 printf '\n' >> start-win-debugenv.bat # Newline
 printf "bitsadmin /Transfer myJob3 http://$myip:8080/rp-win-x86.exe"' C:\\windows\\temp\\rp-win-x86.exe' >> start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
-printf "bitsadmin /Transfer myJob3 http://$myip:8080/filter-ropfile.py"' C:\\windows\\temp\\filter-ropfile.py' >> start-win-debugenv.bat
-printf '\n' >> start-win-debugenv.bat # Newline
 
 # Add shortcut
 printf 'echo "C:\Program Files\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbg.bat' >> start-win-debugenv.bat
