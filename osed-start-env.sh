@@ -19,6 +19,8 @@ wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/windbg-dark-g
 wget https://github.com/corelan/windbglib/raw/master/pykd/pykd.zip -O pykd.zip
 wget https://download.sysinternals.com/files/SysinternalsSuite.zip -O SysinternalsSuite.zip
 
+# Other tools
+wget https://github.com/0xbad53c/osed-tools/raw/main/filter-ropfile.py -O filter-ropfile.py
 
 printf "bitsadmin /Transfer myJob1 http://$myip:8080/windbg.wew"' C:\\windows\\temp\\windbg.wew' > start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
@@ -26,6 +28,10 @@ printf "bitsadmin /Transfer myJob2 http://$myip:8080/find-ppr-32.py"' C:\\window
 printf '\n' >> start-win-debugenv.bat # Newline
 printf "bitsadmin /Transfer myJob3 http://$myip:8080/rp-win-x86.exe"' C:\\windows\\temp\\rp-win-x86.exe' >> start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
+printf "bitsadmin /Transfer myJob3 http://$myip:8080/filter-ropfile.py"' C:\\windows\\temp\\filter-ropfile.py' >> start-win-debugenv.bat
+printf '\n' >> start-win-debugenv.bat # Newline
+
+# Add shortcut
 printf 'echo "C:\Program Files\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbg.bat' >> start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
 printf 'echo "C:\Program Files (x86)\Windows Kits\\10\Debuggers\x86\windbg.exe" -WF C:\\windows\\temp\\windbg.wew > WinDbgx86.bat' >> start-win-debugenv.bat
