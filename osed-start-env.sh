@@ -17,9 +17,7 @@ wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/generate-eggh
 wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/find-ppr-32.py -O find-ppr-32.py
 wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/windbg-dark-green-x64.wew -O windbg.wew 
 wget https://download.sysinternals.com/files/SysinternalsSuite.zip -O SysinternalsSuite.zip
-
-# Other tools
-wget https://github.com/0xbad53c/osed-tools/raw/main/filter-ropfile.py -O filter-ropfile.py
+wget https://github.com/sebastian93921/OSED-Code-Snippets/raw/main/filter-ropfile.py -O filter-ropfile.py
 
 printf "bitsadmin /Transfer myJob1 http://$myip:8080/windbg.wew"' C:\\windows\\temp\\windbg.wew' > start-win-debugenv.bat
 printf '\n' >> start-win-debugenv.bat # Newline
