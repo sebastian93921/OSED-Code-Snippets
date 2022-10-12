@@ -85,7 +85,7 @@ def append_result_file(filename, gadget_list, header, aslr, dll_name, image_base
             if start > 0:
                 address = gadget.split(":")[0] # take the address part, parse it as int
                 offset = int(address, 16) - int(image_base, 16) # parse image_base as hex and subtract
-                gadget = "0x{:08x}".format(offset) # convert back to hex string
+                gadget = "0x{:08x}".format(offset) + gadget[len(address):] # convert back to hex string
                 gadget = gadget[start+2:] # also keep in mind 0x
                 gadget = dllname + "+0x" + gadget
 
