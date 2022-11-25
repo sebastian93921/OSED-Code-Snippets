@@ -39,7 +39,6 @@ def filter_bad_char_gadgets(gadget_list, badchars, aslr):
         n  = 2
         for index in range(0, len(badchars), n):
             split_badchars.append(badchars[index : index + n].lower())
-            split_badchars.append(badchars[index : index + n].upper())
 
         # convert hex address into list of pairs
         contains_bad_char = False
